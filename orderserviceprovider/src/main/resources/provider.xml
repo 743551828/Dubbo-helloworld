@@ -24,5 +24,7 @@
     <!--声明需要调用的远程服务接口，生成远程服务代理-->
     <dubbo:reference interface="com.zys.service.UserService" id="userService"></dubbo:reference>
 
+    <dubbo:monitor protocol="registry"></dubbo:monitor>
+    <!--<dubbo:monitor address="127.0.0.1:7070"></dubbo:monitor>-->
 
 </beans>

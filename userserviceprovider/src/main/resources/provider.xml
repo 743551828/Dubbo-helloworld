@@ -23,4 +23,8 @@
     <dubbo:service interface="com.zys.service.UserService" ref="userServiceImpl"></dubbo:service>
 
     <bean id="userServiceImpl" class="com.zys.service.impl.UserServiceImpl"></bean>
+
+    <!--5、指定监控中心-->
+    <dubbo:monitor protocol="registry"></dubbo:monitor>
+    <!--<dubbo:monitor address="127.0.0.1:7070"></dubbo:monitor>-->
 </beans>

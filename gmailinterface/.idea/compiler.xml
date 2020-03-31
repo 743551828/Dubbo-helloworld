@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gmailinterface" />
-        <module name="order-service-provider" />
+        <module name="order-service-consumer" />
         <module name="user-service-provider" />
       </profile>
     </annotationProcessing>

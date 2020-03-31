@@ -29,6 +29,8 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void initOrder(String userId) {
         List<UserAddress> userAddressList = userService.getUserAddressList(userId);
-        System.out.println(userAddressList);
+        for (UserAddress userAddress : userAddressList){
+            System.out.println(userAddress.getUserAddress());
+        }
     }
 }

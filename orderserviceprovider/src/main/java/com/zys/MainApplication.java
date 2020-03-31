@@ -1,6 +1,7 @@
 package com.zys;
 
 import com.zys.service.OrderService;
+import com.zys.service.impl.OrderServiceImpl;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
@@ -16,7 +17,7 @@ public class MainApplication {
 
         ClassPathXmlApplicationContext ioc = new ClassPathXmlApplicationContext("provider.xml");
 
-        OrderService orderService = ioc.getBean(OrderService.class);
+        OrderServiceImpl orderService = (OrderServiceImpl) ioc.getBean(OrderService.class);
         orderService.initOrder("1");
         System.in.read();
 
